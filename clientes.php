@@ -12,6 +12,12 @@ if (!isset($_GET["busqueda"]) || empty($_GET["busqueda"])) {
     $clientes = buscarClientes($_GET["busqueda"]);
 }
 ?>
+<style>
+     .row{
+        margin-top: 15px;
+        margin-left: 5px;
+    }
+</style>
 <div class="row">
     <div class="col-12">
         <h1>Clientes</h1>

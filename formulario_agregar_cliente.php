@@ -17,11 +17,12 @@
             <form action="guardar_cliente.php" method="post">
                 <div class="form-group">
                     <label for="nombre">Nombre</label>
-                    <input required type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre" pattern="^[a-zA-ñÑ]*$">
+                    <input required type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre" pattern="^[a-z-ñÑ]*$">
                 </div>
                 <div class="form-group">
                     <label for="edad">Edad</label>
-                    <input required type="number" class="form-control" name="edad" id="edad" placeholder="Edad">
+                    <!--Edad minimo de 18 años-->
+                    <input required type="number" class="form-control" name="edad" id="edad" placeholder="Edad" min="18">
                 </div>
                 <div class="form-group">
                     <label for="departamento">Departamento</label>

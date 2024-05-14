@@ -4,6 +4,12 @@ include_once "funciones.php";
 $clientes = obtenerClientes();
 
 ?>
+<style>
+     .row{
+        margin-top: 15px;
+        margin-left: 5px;
+    }
+</style>
 <div class="row">
     <div class="col-12">
         <h1>Registrar venta</h1>
