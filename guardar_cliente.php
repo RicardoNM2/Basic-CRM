@@ -8,3 +8,4 @@ if (!$ok) {
 } else {
     header("Location: clientes.php");
 }
+?>

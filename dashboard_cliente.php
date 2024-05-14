@@ -94,4 +94,10 @@ $totalVentasEnOtroPeriodo = totalAcumuladoVentasPorClienteAntesDeUltimoAnio($cli
         },
     });
 </script>
+<style>
+     .row{
+        margin-top: 15px;
+        margin-left: 5px;
+    }
+</style>
 <?php include_once "pie.php"; ?>

@@ -4,6 +4,13 @@ include_once "funciones.php";
 $cliente = obtenerClientePorId($_GET["id"]);
 $departamentos = obtenerDepartamentos();
 ?>
+<style>
+ .row{
+        margin-top: 15px;
+        margin-left: 5px;
+    }
+    </style>
+
 <div class="row">
     <div class="col-12">
         <h1>Editar cliente</h1>

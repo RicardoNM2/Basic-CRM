@@ -8,3 +8,4 @@ if ($ok) {
 } else {
     echo "Error guardando venta";
 }
+?>
