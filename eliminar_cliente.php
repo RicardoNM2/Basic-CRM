@@ -1,4 +1,6 @@
 <?php
+
+
 include_once "funciones.php";
 //Llama a la función elimitarCliente para eliminar al cliente correspondiente al ID 
 $ok = eliminarCliente($_GET["id"]);

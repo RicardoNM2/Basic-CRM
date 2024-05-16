@@ -5,9 +5,9 @@ $cliente = obtenerClientePorId($_GET["id"]);
 $departamentos = obtenerDepartamentos();
 ?>
 <style>
- .row{
+ .row {
         margin-top: 15px;
-        margin-left: 5px;
+        margin-left: 4px;
     }
     </style>
 

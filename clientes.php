@@ -15,7 +15,7 @@ if (!isset($_GET["busqueda"]) || empty($_GET["busqueda"])) {
 <style>
      .row{
         margin-top: 15px;
-        margin-left: 5px;
+        margin-left: 4px;
     }
 </style>
 <div class="row">

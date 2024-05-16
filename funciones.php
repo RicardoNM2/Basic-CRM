@@ -128,6 +128,14 @@ function obtenerNumeroTotalClientesUltimos30Dias()
     $sentencia->execute([$hace30Dias]);
     return $sentencia->fetchObject()->conteo;
 }
+function obtenerNumeroTotalClientesAniosAnteriores()
+{
+    $inicio = date("Y-01-01");
+    $bd = obtenerBD();
+    $sentencia = $bd->prepare("SELECT COUNT(*) AS conteo FROM clientes WHERE fecha_registro < ?");
+    $sentencia->execute([$inicio]);
+    return $sentencia->fetchObject()->conteo;
+}
 
 function obtenerNumeroTotalClientesUltimoAnio()
 {
@@ -138,14 +146,6 @@ function obtenerNumeroTotalClientesUltimoAnio()
     return $sentencia->fetchObject()->conteo;
 }
 
-function obtenerNumeroTotalClientesAniosAnteriores()
-{
-    $inicio = date("Y-01-01");
-    $bd = obtenerBD();
-    $sentencia = $bd->prepare("SELECT COUNT(*) AS conteo FROM clientes WHERE fecha_registro < ?");
-    $sentencia->execute([$inicio]);
-    return $sentencia->fetchObject()->conteo;
-}
 
 function obtenerTotalDeVentas()
 {
@@ -168,16 +168,6 @@ function obtenerConteoClientesPorRangoDeEdad($inicio, $fin)
     $sentencia->execute([$inicio, $fin]);
     return $sentencia->fetchObject()->conteo;
 }
-
-function obtenerVentasAnioActualOrganizadasPorMes()
-{
-    $bd = obtenerBD();
-    $anio = date("Y");
-    $sentencia = $bd->prepare("select MONTH(fecha) AS mes, COUNT(*) AS total from ventas_clientes WHERE YEAR(fecha) = ? GROUP BY MONTH(fecha);");
-    $sentencia->execute([$anio]);
-    return $sentencia->fetchAll();
-}
-
 function obtenerReporteClientesEdades()
 {
     $rangos = [
@@ -198,4 +188,14 @@ function obtenerReporteClientesEdades()
     }
     return $resultados;
 }
+function obtenerVentasAnioActualOrganizadasPorMes()
+{
+    $bd = obtenerBD();
+    $anio = date("Y");
+    $sentencia = $bd->prepare("select MONTH(fecha) AS mes, COUNT(*) AS total from ventas_clientes WHERE YEAR(fecha) = ? GROUP BY MONTH(fecha);");
+    $sentencia->execute([$anio]);
+    return $sentencia->fetchAll();
+}
+
+
 ?>

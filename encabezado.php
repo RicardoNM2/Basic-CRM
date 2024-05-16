@@ -31,13 +31,13 @@
         <div class="collapse navbar-collapse" id="miNavbar" style="margin-left: 40px;">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item" style="margin-right: 10px;">
-                    <a class="nav-link" href="clientes.php"><span class="mdi mdi-account-multiple"></span> Clientes</a>
+                    <a class="nav-link" href="clientes.php"><span class="mdi mdi-account-multiple"></span>Clientes</a>
                 </li>
                 <li class="nav-item" style="margin-right: 10px;">
-                    <a class="nav-link" href="ventas.php"><span class="mdi mdi-store"></span> Ventas</a>
+                    <a class="nav-link" href="ventas.php"><span class="mdi mdi-store"></span>Ventas</a>
                 </li>
                 <li class="nav-item" style="margin-right: 10px">
-                    <a class="nav-link" href="dashboard.php"><span class="mdi mdi-desktop-mac-dashboard"></span> Dashboard</a>
+                    <a class="nav-link" href="dashboard.php"><span class="mdi mdi-desktop-mac-dashboard"></span>Dashboard</a>
                 </li>
         
             </ul>
