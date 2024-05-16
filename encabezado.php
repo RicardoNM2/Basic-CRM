@@ -36,7 +36,7 @@
                 <li class="nav-item" style="margin-right: 10px;">
                     <a class="nav-link" href="ventas.php"><span class="mdi mdi-store"></span> Ventas</a>
                 </li>
-                <li class="nav-item" style="margin-right: 10p>
+                <li class="nav-item" style="margin-right: 10px">
                     <a class="nav-link" href="dashboard.php"><span class="mdi mdi-desktop-mac-dashboard"></span> Dashboard</a>
                 </li>
         
